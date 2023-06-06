@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Permanent_Marker;
+  src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+body {
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.main .container {
+  width: 20%;
+  padding: 3.2552083333vw;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  border-radius: 1.3020833333vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6510416667vw;
+}
+.main .container .title {
+  width: 100%;
+  font-size: 2.34375vw;
+  font-weight: bold;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.main .container .grid-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 31.8865% 31.8865% 31.8865%;
+  grid-template-rows: 6.3072916667vw 6.3072916667vw 6.3072916667vw;
+  position: relative;
+  -moz-column-gap: 0.6510416667vw;
+       column-gap: 0.6510416667vw;
+  row-gap: 0.6510416667vw;
+  font-family: Permanent_Marker, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.main .container .grid-layout .box {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0.6510416667vw;
+  font-size: 4.3072916667vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 2px 4px darkgray;
+  transition: all 0.2s ease-in;
+  z-index: 1;
+}
+.main .container .grid-layout .box_hover:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 4px darkgray;
+}
+.main .container #turn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.34375vw;
+  font-weight: bold;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.main .container .winner {
+  display: none;
+  width: 100%;
+  font-size: 1.34375vw;
+  font-weight: bold;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.main .container .reset-btn {
+  width: 100%;
+  padding: 0.6510416667vw;
+  border-radius: 0.6510416667vw;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3020833333vw;
+  background-image: linear-gradient(199deg, #21D4FD 0%, #B721FF 100%);
+  font-family: inherit;
+  outline: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 2px 4px darkgray;
+  transition: all 0.2s ease-in;
+  z-index: 1;
+}
+.main .container .reset-btn:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 4px darkgray;
+}/*# sourceMappingURL=main.css.map */
