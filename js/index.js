@@ -1,5 +1,5 @@
 let boxlist = ["box-1", "box-2", "box-3", "box-4", "box-5", "box-6", "box-7", "box-8", "box-9"];
-let possible_solutions = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]];
+let possible_solutions = [[1, 2, 3, 1], [4, 5, 6, 2], [7, 8, 9, 3], [1, 4, 7, 4], [2, 5, 8, 5], [3, 6, 9, 6], [1, 5, 9, 7], [3, 5, 7, 8]];
 
 let turn = 1;
 let count = 0;
@@ -47,6 +47,11 @@ function checkSolution(player) {
 
             document.getElementById("turn").style.display = "none";
             document.getElementById("winner").style.display = "block";
+            document.getElementById("line-"+arr[3]).style.display = "block";
+            let cf = document.getElementsByClassName("crossfill");
+            for(let e of cf){
+                e.style.zIndex = 1;
+            }
             
             let disabledBoxList = Array(boxlist)[0];
             disabledBoxList.splice(arr[2] - 1, 1);
